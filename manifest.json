@@ -1,0 +1,27 @@
+{
+  "name": "Haseef Muhammed - Web Developer Portfolio",
+  "short_name": "Haseef Portfolio",
+  "description": "CEO & Founder of TEB Innovations. Professional Web Developer specializing in responsive web design.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "business", "technology"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

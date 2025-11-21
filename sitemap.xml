@@ -1,14 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
   <url>
     <loc>https://haseefmuhammed.netlify.app/</loc>
-    <lastmod>2025-05-11</lastmod>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://haseefmuhammed.netlify.app/images/haseef4.png</image:loc>
+      <image:title>Haseef Muhammed - Web Developer</image:title>
+    </image:image>
   </url>
+
+  <!-- About Section -->
   <url>
-    <loc>https://haseefmuhammed.netlify.app/about.html</loc>
-    <lastmod>2025-05-11</lastmod>
+    <loc>https://haseefmuhammed.netlify.app/#about-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Add more URLs as needed -->
+
+  <!-- Resume Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#resume-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#services-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Skills Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#skills-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Projects Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#projects-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#blog-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Section -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/#contact-section</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 404 Page -->
+  <url>
+    <loc>https://haseefmuhammed.netlify.app/404.html</loc>
+    <lastmod>2025-01-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

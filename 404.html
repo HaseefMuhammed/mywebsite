@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/futuristic.css">
 		<link rel="icon" href="images/logo.png" type="images/logo">
 
     		<!-- SEO -->
@@ -30,81 +31,108 @@
 		<meta name="robots" content="index, follow">
 
     <style>
-      body {
-        background: linear-gradient(135deg, var(--orange), #ff9966, #ff5e62);
-        color: #ffffff;
-        /* font-family: 'Segoe UI', sans-serif; */
-        height: 100vh;
-        margin: 0;
-        /* overflow: hidden; */
-        /* display: flex; */
+      .error-404-container {
+        min-height: 100vh;
+        display: flex;
         align-items: center;
         justify-content: center;
-      }
-  
-      .errorunk-container {
-        max-width: 900px;
-      }
-  
-      .errorunk-image {
-        width: 100em;
-        /* max-width: 300px; */
-        animation: errorunk-float 3s ease-in-out infinite;
-      }
-  
-      /* @keyframes errorunk-float {
-        0% { transform: translateY(0); }
-        50% { transform: translateY(-15px); }
-        100% { transform: translateY(0); }
-      } */
-  
-      .errorunk-glitch {
-        font-size: 6rem;
-        font-weight: bold;
+        padding: 2rem 0;
         position: relative;
-        color: #fff;
-        text-shadow: 2px 2px #ff005a, -2px -2px #00f7ff;
-        animation: errorunk-glitch 1s infinite;
+        z-index: 1;
       }
-  
-      @keyframes errorunk-glitch {
-        0% {
-          text-shadow: 2px 2px #ff005a, -2px -2px #00f7ff;
+
+      .error-404-content {
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .error-404-number {
+        font-size: 12rem;
+        font-weight: 900;
+        background: var(--gradient-orange);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+        margin-bottom: 2rem;
+        animation: float 3s ease-in-out infinite;
+        text-shadow: 0 10px 30px rgba(255, 107, 53, 0.3);
+      }
+
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+      }
+
+      .error-404-image {
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+        margin: 2rem auto;
+        border-radius: 20px;
+        box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);
+        border: 2px solid rgba(255, 107, 53, 0.2);
+        animation: floatImage 4s ease-in-out infinite;
+      }
+
+      @keyframes floatImage {
+        0%, 100% {
+          transform: translateY(0px) rotate(0deg);
         }
-        20% {
-          text-shadow: -2px 2px #ff005a, 2px -2px #00f7ff;
-        }
-        40% {
-          text-shadow: 2px -2px #ff005a, -2px 2px #00f7ff;
-        }
-        60% {
-          text-shadow: -2px -2px #ff005a, 2px 2px #00f7ff;
-        }
-        80% {
-          text-shadow: 2px 2px #ff005a, -2px -2px #00f7ff;
-        }
-        100% {
-          text-shadow: 0 0 #ff005a, 0 0 #00f7ff;
+        50% {
+          transform: translateY(-15px) rotate(2deg);
         }
       }
-  
-      .errorunk-btn-home {
-        /* background: #00f7ff; */
-        background-color: white;
-        color: #000;
-        font-weight: 600;
-        border: none;
+
+      .error-404-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        margin-bottom: 1.5rem;
       }
-  
-      .errorunk-btn-home:hover {
-        /* background: #00c2d3; */
-        background-color: black;
-        color: white;
+
+      .error-404-text {
+        font-size: 1.2rem;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
       }
-  
+
+      .error-404-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
       @media (max-width: 768px) {
-        .errorunk-glitch {
-          font-size: 4rem;
+        .error-404-number {
+          font-size: 8rem;
+        }
+
+        .error-404-title {
+          font-size: 2rem;
+        }
+
+        .error-404-text {
+          font-size: 1rem;
+        }
+
+        .error-404-image {
+          max-width: 300px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .error-404-number {
+          font-size: 6rem;
+        }
+
+        .error-404-title {
+          font-size: 1.5rem;
         }
       }
     </style>
@@ -121,8 +149,35 @@
   
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
+
+		<!-- Futuristic Particle Background -->
+		<div class="particles">
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+			<div class="particle"></div>
+		</div>
+
+		<!-- Grid Lines Background -->
+		<div class="grid-lines"></div>
+
+		<!-- Floating Blobs -->
+		<div class="blob blob-1"></div>
+		<div class="blob blob-2"></div>
+		<div class="blob blob-3"></div>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html">Haseef Muhammed</a>
@@ -132,35 +187,47 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
-	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="index.html#skills-section" class="nav-link"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a></li>
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
-<div class="p-5"></div>
-		<div class="container errorunk-container mt-5">
-    <div class="row align-items-center text-center text-md-start">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <!-- Replace with your image path -->
-        <img src="images/haseef 404.png" alt="Lost Haseef Muhammed Lost Image" class="errorunk-image img-fluid">
-      </div>
-      <div class="col-md-6">
-        <h1 class="errorunk-glitch">404</h1>
-        <h3 class="mb-3">Oops! Even the best explorers get lost sometimes</h3>
-        <p class="mb-4">Sorry, the page you are looking for might have been removed or doesn't exist anymore.</p>
-        <a href="index.html" class="btn errorunk-btn-home px-4 py-2">Back to Home</a>
-      </div>
-    </div>
-  </div>
 
-  <div class="p-5"></div>
+    <div class="p-5"></div>
+		<!-- 404 Error Section -->
+		<section class="error-404-container">
+			<div class="container">
+				<div class="error-404-content" data-aos="fade-up" data-aos-duration="1000">
+					<div class="error-404-number">404</div>
+
+					<img src="images/haseef 404.png" alt="Page Not Found - Haseef Muhammed" class="error-404-image" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+
+					<h1 class="error-404-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+						Oops! Page Not Found
+					</h1>
+
+					<p class="error-404-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+						The page you're looking for seems to have wandered off. Don't worry, even the best explorers get lost sometimes. Let's get you back on track!
+					</p>
+
+					<div class="error-404-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+						<a href="index.html" class="btn btn-primary py-3 px-5">
+							<i class="icon-home mr-2"></i> Back to Home
+						</a>
+						<a href="index.html#contact-section" class="btn btn-white btn-outline-white py-3 px-5">
+							<i class="icon-envelope mr-2"></i> Contact Me
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -180,11 +247,11 @@
             <div class="ftco-footer-widget mb-4 ml-md-4">
               <h2 class="ftco-heading-2">Links</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="index.html#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="index.html#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="index.html#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
               </ul>
             </div>
           </div>
@@ -192,12 +259,12 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Services</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>App Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Designing</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Search Engine Optimization (SEO)</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>IT Cunsulting</a></li>
-								<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Product Stratergy</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>App Development</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Graphic Designing</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Search Engine Optimization (SEO)</a></li>
+                <li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>IT Consulting</a></li>
+								<li><a href="index.html#services-section"><span class="icon-long-arrow-right mr-2"></span>Product Strategy</a></li>
               </ul>
             </div>
           </div>
@@ -218,7 +285,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://tebinnovations.in" target="_blank">TEB Innovations</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
@@ -244,8 +311,18 @@
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/scrollax.min.js"></script>
 	<script src="https://kit.fontawesome.com/3945bc0b8d.js" crossorigin="anonymous"></script>
-  
+
   <script src="js/main.js"></script>
-    
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  </script>
+
   </body>
 </html>

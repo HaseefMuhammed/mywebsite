@@ -1,0 +1,10 @@
+# robots.txt for Haseef Muhammed Portfolio
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://haseefmuhammed.netlify.app/sitemap.xml
+
+# Disallow admin or private pages if any
+# Disallow: /admin/
+# Disallow: /private/
